@@ -1,4 +1,4 @@
-import { Github, Twitter, ExternalLink, BookOpen, History } from "lucide-react";
+import { Github, Twitter, ExternalLink, Bot, History, LucideBot } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export function DocHeader() {
@@ -21,7 +21,7 @@ export function DocHeader() {
       </div>
       <div className="flex items-center gap-4">
         <a
-          href="https://github.com/operacle"
+          href="https://github.com/operacle/checkcle"
           target="_blank"
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-primary transition-colors"
@@ -30,7 +30,7 @@ export function DocHeader() {
           <span className="sr-only">GitHub</span>
         </a>
         <a
-          href="https://x.com/tl"
+          href="https://x.com/tlengoss"
           target="_blank"
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-primary transition-colors"
@@ -47,13 +47,16 @@ export function DocHeader() {
           <ExternalLink className="h-5 w-5" />
           <span className="sr-only">Website</span>
         </a>
-        <Link
-          to="/documentation"
+        <a
+          href="https://discord.gg/xs9gbubGwX"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-muted-foreground hover:text-primary transition-colors"
         >
-          <BookOpen className="h-5 w-5" />
-          <span className="sr-only">Documentation</span>
-        </Link>
+          <Bot className="h-5 w-5" />
+          <span className="sr-only">Discord</span>
+        </a>
+        
         <Link
           to="/changelog"
           className="text-muted-foreground hover:text-primary transition-colors"
