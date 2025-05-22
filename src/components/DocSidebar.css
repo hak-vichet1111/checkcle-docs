@@ -1,0 +1,37 @@
+
+/* Custom scrollbar styles */
+.sidebar-content {
+  transition: width 0.3s ease;
+  width: 16rem;
+}
+
+.sidebar-content.collapsed {
+  width: 4rem;
+}
+
+/* Dashboard expansion transitions */
+main {
+  transition: all 0.3s ease;
+  margin-left: 0;
+}
+
+/* Dashboard adjustments when sidebar is collapsed */
+body.sidebar-collapsed main {
+  margin-left: 0;
+  max-width: calc(100% - 4rem);
+}
+
+body:not(.sidebar-collapsed) main {
+  margin-left: 0;
+  max-width: calc(100% - 16rem);
+}
+
+
+body.sidebar-collapsed .sidebar-content {
+  width: 60px !important;
+}
+
+body.sidebar-collapsed .sidebar-content .SidebarGroupLabel,
+body.sidebar-collapsed .sidebar-content input {
+  display: none;
+}
