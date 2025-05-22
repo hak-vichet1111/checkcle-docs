@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Introduction from "./pages/pageIntroduction";
 import QuickStart from "./pages/QuickStart";
 import Installation from "./pages/pageInstallation";
-import Screenshots from "./pages/pageScreenshot";
+import Screenshots from "./pages/pageScreenShot";
 import Uninstall from "./pages/pageUninstallation";
 import ProjectStructure from "./pages/pageProjectStructure";
 import TypeScript from "./pages/pageTypeScript"
